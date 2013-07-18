@@ -43,7 +43,7 @@
         
         <!-- Navbar -->
         <section class='row fix'>
-            <nav role="navigation c12" class='nav-bar'>
+            <nav role="navigation" class='c12 nav-bar'>
                 <ol id="principal">
                     <li><a href="#" title="" class='nav-active'>Home</a></li>
                     <li>
@@ -73,8 +73,38 @@
     <div id="main" role="main">
         
         <!-- Slider -->
+        <section class='box2 effect6'>
         <section class='slider row fix'>
             <section class='row'>
+                <aside class='left slider-ul c3 end'>
+                    <ul>
+                        <li class='li-active' id='li-1'> 
+                            <a href='#1'>
+                                Slider 001
+                                <h4> Lorem ipsum dolor sit amet. </h4>
+                            </a>
+                        </li>
+                        <li id='li-2'> 
+                            <a href='#2'>
+                                Slider 002
+                                <h4> Lorem ipsum dolor sit amet. </h4>
+                            </a>
+                        </li>
+                        <li id='li-3'> 
+                            <a href='#3'>
+                                Slider 001
+                                <h4> Lorem ipsum dolor sit amet. </h4>
+                            </a>
+                        </li>
+                        <li id='li-4'> 
+                            <a href='#4'>
+                                Slider 001
+                                <h4> Lorem ipsum dolor sit amet. </h4>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+
                 <article class='left c9 slider-pics slid' id='1'>
                     <figure class='slider-on'> 
                         <img src='assets/img/slider/img-01.png' alt=''>
@@ -107,36 +137,8 @@
                         </figcaption>
                     </figure>                     
                 </article>
-
-                <aside class='left slider-ul c3 end'>
-                    <ul>
-                        <li class='li-active' id='li-1'> 
-                            <a href='#1'>
-                                Slider 001
-                                <h4> Lorem ipsum dolor sit amet. </h4>
-                            </a>
-                        </li>
-                        <li id='li-2'> 
-                            <a href='#2'>
-                                Slider 002
-                                <h4> Lorem ipsum dolor sit amet. </h4>
-                            </a>
-                        </li>
-                        <li id='li-3'> 
-                            <a href='#3'>
-                                Slider 001
-                                <h4> Lorem ipsum dolor sit amet. </h4>
-                            </a>
-                        </li>
-                        <li id='li-4'> 
-                            <a href='#4'>
-                                Slider 001
-                                <h4> Lorem ipsum dolor sit amet. </h4>
-                            </a>
-                        </li>
-                    </ul>
-                </aside>
             </section>
+        </section>
         </section>
         
         <!-- Ultimos Trabalhos -->
@@ -308,7 +310,7 @@
     
     // Function to change slider on click
     $('.slider-ul ul li a').on('click', function(e){
-        e.preventDefault;
+
 
         var id = $(this).attr('href');
         // Removes a classe nos li
@@ -324,6 +326,8 @@
         });
         // Adiciono a classe ao clicado
         $(id).show();
+
+        e.preventDefault();
 
     });
 
