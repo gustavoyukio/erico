@@ -1,0 +1,14 @@
+
+		<VirtualHost *:80>
+			DocumentRoot /var/www/erico/
+			ServerName teste
+			ServerAlias teste
+	
+			<Directory /var/www/erico/>
+				Options Includes FollowSymLinks
+				AllowOverride All
+				Order allow,deny
+				Allow from all
+			</Directory>
+		</VirtualHost>
+		
